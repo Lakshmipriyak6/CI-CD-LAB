@@ -1,69 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Home Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dream University</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
+
     header {
-      background: #007bff;
+      background-color: #003366;
       color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
+      padding: 20px 40px;
       display: flex;
-      justify-content: center;
-      background: #0056b3;
-      padding: 10px 0;
+      justify-content: space-between;
+      align-items: center;
     }
+
+    header h1 {
+      margin: 0;
+    }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
+      font-weight: bold;
     }
+
     .hero {
-      padding: 60px;
+      background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b') no-repeat center center/cover;
+      color: white;
+      padding: 120px 40px;
       text-align: center;
-      background: #f0f0f0;
     }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    .about, .courses, .contact {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .courses ul {
+      padding-left: 20px;
+    }
+
     footer {
-      background: #222;
+      background-color: #003366;
       color: white;
       text-align: center;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Welcome to My Website</h1>
+    <h1>Dream University</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-  </nav>
-
   <section class="hero">
-    <h2>Your Gateway to Great Things</h2>
-    <p>Explore our content and discover amazing resources.</p>
+    <h2>Empowering Minds, Shaping Futures</h2>
+    <p>Join the university that builds tomorrow's leaders.</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Dream University is a prestigious institution focused on academic excellence, innovation, and leadership. Established in 1985, we offer world-class education across multiple disciplines with a commitment to holistic student development.</p>
+  </section>
+
+  <section id="courses" class="courses">
+    <h2>Courses Offered</h2>
+    <ul>
+      <li>Bachelor of Technology (B.Tech)</li>
+      <li>Bachelor of Science (B.Sc)</li>
+      <li>Master of Business Administration (MBA)</li>
+      <li>Ph.D. in Engineering & Sciences</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@dreamuniversity.edu</p>
+    <p>Phone: +91-12345-67890</p>
+    <p>Address: 123 Knowledge Lane, City, Country</p>
   </section>
 
   <footer>
-    &copy; 2025 My Website. All rights reserved.
+    <p>&copy; 2025 Dream University. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
-
